@@ -3,7 +3,6 @@ import apiClient from "../services/api-client";
 import { CanceledError } from "axios";
 import useData from "./useData";
 
-
 export interface Genre {
   id: number;
   name: string;
@@ -15,11 +14,9 @@ interface FetchGenreResponse {
   results: Genre[];
 }
 
-const useGenres = () => useData<Genre>('/genres')
-
+const useGenres = () => useData<Genre>("/genres");
 
 export default useGenres;
-
 
 //   const [genres, setGenres] = useState<Genre[]>([]);
 //   const [error, setError] = useState("");
