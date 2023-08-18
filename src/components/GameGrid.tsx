@@ -7,7 +7,7 @@ import GameCardSkeleton from "./GameCardSkeleton";
 import GameCardContainer from "./GameCardContainer";
 import { Genre } from "../hooks/useGenres";
 
-
+ 
 interface Props{
   selectedGenre: Genre | null
 }
